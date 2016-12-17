@@ -25,6 +25,7 @@ The easiest way to setup a factorio server by far, is to use [Digital Ocean.](ht
 Windows users will need to look at alterations for using PuTTY.
 
 1. Make note of the IP address of your server (ipv4)
+<img src="https://cloud.githubusercontent.com/assets/6523593/21289648/2184ce1c-c49a-11e6-82a0-fdd6fa07a04f.png" width="250">
 ![docker IP address](https://cloud.githubusercontent.com/assets/6523593/21289648/2184ce1c-c49a-11e6-82a0-fdd6fa07a04f.png =250x)
 2. Open terminal
 3. `ssh root@IPaddress`, obviously replace 'IPaddress' with the IP address.
