@@ -6,12 +6,9 @@ This repository was forked from [carloe/docker-factorio](https://hub.docker.com/
 The easiest way to setup a factorio server by far, is to use [Digital Ocean.](https://m.do.co/c/ebb875976e21) Follow the link to signup and get $10 for free to start you off. This guide assumes your are using a Mac, Windows users may have to alter their method when it comes to terminal usage. Disclaimer: All referrals generate credit to my account for more factorio goodness.
 
 1. Sign up to [Digital Ocean](https://m.do.co/c/ebb875976e21)
-2. Click 'Create droplet' button
-
-<img src="https://cloud.githubusercontent.com/assets/6523593/21289644/2160bb62-c49a-11e6-9a01-b9556445ffec.png" width="300">
-
-3. Under 'Choose an image' select 'One-click apps'
-
+2. Click 'Create droplet' button  
+<img src="https://cloud.githubusercontent.com/assets/6523593/21289644/2160bb62-c49a-11e6-9a01-b9556445ffec.png" width="300">  
+3. Under 'Choose an image' select 'One-click apps'  
 <img src="https://cloud.githubusercontent.com/assets/6523593/21289645/2160d250-c49a-11e6-89f5-328e299d07a2.png" width="500">
 
 4. Select 'Docker 1.12.\* on 16.04'
@@ -26,7 +23,7 @@ The easiest way to setup a factorio server by far, is to use [Digital Ocean.](ht
 
 <img src="https://cloud.githubusercontent.com/assets/6523593/21289642/2146c11c-c49a-11e6-9c00-05978a9d8bfa.png" width="500">
 
-7. Add your [SSH public key](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2). Alternatively, you will need to take note of the password that Digital Ocean send to you after you setup the server.
+7. Add your [SSH public key](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2). Alternatively, you will need to take note of the password that Digital Ocean emails to you after you setup the server.
 8. You will only need 1 droplet, name your server and click create
 
 <img src="https://cloud.githubusercontent.com/assets/6523593/21289643/215f73ce-c49a-11e6-9803-0f45b226eced.png" width="200">
