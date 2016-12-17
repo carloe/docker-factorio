@@ -13,6 +13,8 @@ USER factorio
 
 ENV HOME /opt/factorio
 ENV SAVEFILE /opt/factorio/saves/factorio_save.zip
+ENV MAPSETTINGS /opt/factorio/map-gen-settings.json
+ENV SERVERSETTINGS /opt/factorio/server-settings.json
 
 WORKDIR /opt/factorio
 
@@ -20,6 +22,8 @@ RUN  wget -q -O - https://www.factorio.com/download-headless/stable | grep -o -m
   && tar -xzf /tmp/factorio.tar.gz -C /opt \
   && rm -rf /tmp/factorio.tar.gz
 
+ADD  map-gen-settings.json /opt/factorio/
+ADD  server-settings.json /opt/factorio/
 ADD  init.sh /opt/factorio/
 
 EXPOSE 34197/udp

@@ -31,7 +31,7 @@ Windows users will need to look at alterations for using PuTTY.
 
 # Build Your Factorio Headless Server
 
-The latest Factorio headless server is downloaded at build time. This may be a good reason you want to build your own image since the Docker Hub repo may not always be up to date.
+The latest Factorio headless server is downloaded at build time.
 
 1. `git clone https://github.com/LpmRaven/docker-factorio.git`
 2. `docker build -t factorio-instance-name .`

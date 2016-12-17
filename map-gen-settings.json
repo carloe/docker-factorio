@@ -1,0 +1,19 @@
+{
+  "_comment": "Sizes can be specified as none, very-low, low, normal, high, very-high",
+
+  "terrain_segmentation": "normal",
+  "water": "normal",
+  "width": 0,
+  "height": 0,
+  "starting_area": "normal",
+  "peaceful_mode": false,
+  "autoplace_controls":
+  {
+    "coal": {"frequency": "low", "size": "normal", "richness": "normal"},
+    "copper-ore": {"frequency": "low", "size": "normal", "richness": "normal"},
+    "crude-oil": {"frequency": "low", "size": "high", "richness": "normal"},
+    "enemy-base": {"frequency": "very-high", "size": "very-high", "richness": "very-high"},
+    "iron-ore": {"frequency": "low", "size": "normal", "richness": "normal"},
+    "stone": {"frequency": "low", "size": "normal", "richness": "normal"}
+  }
+}
