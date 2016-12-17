@@ -35,7 +35,14 @@ The latest Factorio headless server is downloaded at build time.
 
 1. `git clone https://github.com/LpmRaven/factorio-docker-server.git`
 2. `cd factorio-docker-server`
-3. `docker build -t factorio-instance-name .`
+3. Config your server (see section below then return here)
+4. `docker build -t factorio-instance-name .`
+
+# Server Configuration
+
+1. `open .`
+2. Edit the map-gen-settings.json file and the server-settings.json file (DO NOT RENAME THE FILES)
+3. Continue to read the previous section
 
 # Persisting Saves
 
@@ -64,3 +71,12 @@ docker run -d \
            --name factorio-server \
            factorio-instance-name
 ```
+
+# Play the game!
+
+1. Open Factorio
+2. Connect to your server `IPaddress:34197`, change IP address obviously.
+3. Default password is `donationswelcome`, feel free to change it.
+4. Play the game!
+
+Enjoy. Hope this guide helped you setup your factorio server!
