@@ -10,8 +10,8 @@
                           "lan: Game will be broadcast on LAN"],
   "visibility":
   {
-    "public": false,
-    "lan": false
+    "public": true,
+    "lan": true
   },
 
   "_comment_credentials": "Your factorio.com login credentials. Required for games with visibility public",
@@ -21,7 +21,7 @@
   "_comment_token": "Authentication token. May be used instead of 'password' above.",
   "token": "",
 
-  "game_password": "",
+  "game_password": "donationswelcome",
 
   "_comment_require_user_verification": "When set to true, the server will only allow clients that have a valid Factorio.com account",
   "require_user_verification": true,

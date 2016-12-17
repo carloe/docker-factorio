@@ -33,8 +33,9 @@ Windows users will need to look at alterations for using PuTTY.
 
 The latest Factorio headless server is downloaded at build time.
 
-1. `git clone https://github.com/LpmRaven/docker-factorio.git`
-2. `docker build -t factorio-instance-name .`
+1. `git clone https://github.com/LpmRaven/factorio-docker-server.git`
+2. `cd factorio-docker-server`
+3. `docker build -t factorio-instance-name .`
 
 # Persisting Saves
 
