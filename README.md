@@ -1,19 +1,40 @@
-[![](https://badge.imagelayers.io/carloe/docker-factorio:latest.svg)](https://imagelayers.io/?images=carloe/docker-factorio:latest 'Get your own badge on imagelayers.io')
-
 # Introduction
+This repository was forked from [carloe/docker-factorio](https://hub.docker.com/r/carloe/docker-factorio/) to build a custom configured server on factorio and provide extra information on how to setup a factorio server using docker.
 
-Dockerfile to build a [Factorio](https://www.factorio.com) game server image. You can find the pre-built images on Docker Hub at [carloe/docker-factorio](https://hub.docker.com/r/carloe/docker-factorio/)
+# Server Setup
 
-# Basic Usage
+The easiest way to setup a factorio server by far, is to use [Digital Ocean.](https://m.do.co/c/ebb875976e21) Follow the link to signup and get $10 for free to start you off. This guide assumes your are using a Mac, Windows users may have to alter their method when it comes to terminal usage. Disclaimer: All referrals generate credit to my account for more factorio goodness.
 
-The init script will automatically create a new save game if none exists. 
+1. Sign up to [Digital Ocean](https://m.do.co/c/ebb875976e21)
+2. Click 'Create droplet' button
+[Click the 'create droplet' button]()
+3. Under 'Choose an image' select 'One-click apps'
+[One-click apps]()
+4. Select 'Docker 1.12.\* on 16.04'
+[docker 1.12.0 on 16.04]()
+5. Select the '$5/mo' size, this is fine for a basic multiplayer server
+[5 dollars a month memory]()
+6. Select the datacenter that is closest to you
+[london datacenter selected]()
+7. Add your [SSH public key](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2). Alternatively, you will need to take note of the password that Digital Ocean send to you after you setup the server.
+8. You will only need 1 droplet, name your server and click create.
+[Create your droplet]()
 
-```bash
-docker run -d \
-           -p 34197:34197/udp \
-           --name factorio-server \
-           carloe/docker-factorio 
-```
+# Connect to your server
+
+Windows users will need to look at alterations for using PuTTY.
+
+1. Make note of the IP address of your server (ipv4)
+[docker 1.12.0 on 16.04]()
+2. Open terminal
+3. `ssh root@IPaddress`, obviously replace 'IPaddress' with the IP address.
+
+# Build Your Factorio headless server
+
+The latest Factorio headless server is downloaded at build time. This may be a good reason you want to build your own image since the Docker Hub repo may not always be up to date.
+
+1. `git clone https://github.com/LpmRaven/docker-factorio.git`
+2. `docker build -t factorio-instance-name .`
 
 # Persisting Saves
 
@@ -26,22 +47,11 @@ mkdir $(pwd)/saves
 sudo chown 1000:1000 $(pwd)/saves
 # (alternatively, if you don't have root): chmod 777 $(pwd)/saves
 
-docker run -d \
-           -v $(pwd)/saves:/opt/factorio/saves \
-           -p 34197:34197/udp \
-           --restart=always \
-           --name factorio-server \
-           carloe/docker-factorio 
 ```
 
-# Build Your Own
+# Basic Usage
 
-The latest Factorio headless server is downloaded at build time. This may be a good reason you want to build your own image since the Docker Hub repo may not always be up to date.
-
-```bash
-git clone https://github.com/carloe/docker-factorio.git
-docker build -t some-factorio .
-```
+The init script will automatically create a new save game if none exists.
 
 Then launch your container as usual.
 
@@ -51,5 +61,5 @@ docker run -d \
            -p 34197:34197/udp \
            --restart=always \
            --name factorio-server \
-           some-factorio 
+           factorio-instance-name
 ```
