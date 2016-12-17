@@ -6,7 +6,7 @@ This repository was forked from [carloe/docker-factorio](https://hub.docker.com/
 The easiest way to setup a factorio server by far, is to use [Digital Ocean.](https://m.do.co/c/ebb875976e21) Follow the link to signup and get $10 for free to start you off. This guide assumes your are using a Mac, Windows users may have to alter their method when it comes to terminal usage. Disclaimer: All referrals generate credit to my account for more factorio goodness.
 
 1. Sign up to [Digital Ocean](https://m.do.co/c/ebb875976e21)
-2. Click 'Create droplet' button    
+2. Click 'Create droplet' button  
 <img src="https://cloud.githubusercontent.com/assets/6523593/21289644/2160bb62-c49a-11e6-9a01-b9556445ffec.png" width="300">  
 3. Under 'Choose an image' select 'One-click apps'  
 <img src="https://cloud.githubusercontent.com/assets/6523593/21289645/2160d250-c49a-11e6-89f5-328e299d07a2.png" width="500">   
@@ -29,7 +29,7 @@ Windows users will need to look at alterations for using PuTTY.
 2. Open terminal
 3. `ssh root@IPaddress`, obviously replace 'IPaddress' with the IP address.
 
-# Build Your Factorio headless server
+# Build Your Factorio Headless Server
 
 The latest Factorio headless server is downloaded at build time. This may be a good reason you want to build your own image since the Docker Hub repo may not always be up to date.
 
