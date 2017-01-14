@@ -1,9 +1,9 @@
 # Introduction
-This repository was forked from [carloe/docker-factorio](https://hub.docker.com/r/carloe/docker-factorio/) to build a custom configured server on factorio and provide extra information on how to setup a factorio server using docker.
+This repository was forked from [carloe/docker-factorio](https://hub.docker.com/r/carloe/docker-factorio/) to build a custom configured server and provide extra information on how to setup a server using docker.
 
 # Server Setup
 
-The easiest way to setup a factorio server by far, is to use [Digital Ocean.](https://m.do.co/c/ebb875976e21) Follow the link to signup and get $10 for free to start you off. This guide assumes your are using a Mac, Windows users may have to alter their method when it comes to terminal usage. Disclaimer: All referrals generate credit to my account for more factorio goodness.
+The easiest way to setup a server by far, is to use [Digital Ocean.](https://m.do.co/c/ebb875976e21) Follow the link to signup and get $10 for free to start you off. This guide assumes your are using a Mac, Windows users may have to alter their method when it comes to terminal usage. Disclaimer: All referrals generate credit to my account for more server goodness.
 
 1. Sign up to [Digital Ocean](https://m.do.co/c/ebb875976e21)
 2. Click 'Create droplet' button  
@@ -29,7 +29,7 @@ Windows users will need to look at alterations for using PuTTY.
 2. Open terminal
 3. `ssh root@IPaddress`, obviously replace 'IPaddress' with the IP address.
 
-# Build Your Factorio Headless Server
+# Build Your Server
 
 The latest Factorio headless server is downloaded at build time.
 
