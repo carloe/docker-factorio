@@ -57,6 +57,11 @@ sudo chown 1000:1000 $(pwd)/saves
 
 ```
 
+# Load a Save/Map
+
+To load a save, place the save file in the saves folder and name the file: factorio_save.zip
+Remove all other files from the save folder as it will load the most recently updated file.
+
 # Basic Usage
 
 The init script will automatically create a new save game if none exists.
