@@ -1,4 +1,5 @@
-[![](https://badge.imagelayers.io/carloe/docker-factorio:latest.svg)](https://imagelayers.io/?images=carloe/docker-factorio:latest 'Get your own badge on imagelayers.io')
+![docker build](https://img.shields.io/docker/build/carloe/docker-factorio.svg "Docker Builds")
+![docker pulls](https://img.shields.io/docker/pulls/carloe/docker-factorio.svg "Docker Pulls")
 
 # Introduction
 
