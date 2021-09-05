@@ -17,15 +17,16 @@ Windows users will need to look at alterations for using PuTTY.
 
 The latest Factorio headless server is downloaded at build time.
 
-1. `git clone https://github.com/LpmRaven/factorio-docker-server.git`
+1. `sudo yum install git`
+2. `git clone https://github.com/LpmRaven/factorio-docker-server.git`
 2. `cd factorio-docker-server`
 3. Config your server (see section below then return here)
 4. `docker build -t factorio-instance-name .`
 
 # Server Configuration
 
-1. `open .`
-2. Edit the map-gen-settings.json file and the server-settings.json file (DO NOT RENAME THE FILES)
+1. use vi to edit files. eg. `vi server-settings.json`
+2. Edit the map-gen-settings.json file, map-settings.json file and the server-settings.json file (DO NOT RENAME THE FILES)
 3. Continue to read the previous section
 
 # Persisting Saves
