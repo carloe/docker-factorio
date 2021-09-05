@@ -20,7 +20,7 @@
   "password": "",
   "_comment_token": "Authentication token. May be used instead of 'password' above.",
   "token": "",
-  "game_password": "",
+  "game_password": "mash",
   "_comment_require_user_verification": "When set to true, the server will only allow clients that have a valid Factorio.com account",
   "require_user_verification": true,
   "_comment_max_upload_in_kilobytes_per_second": "optional, default value is 0. 0 means unlimited.",
