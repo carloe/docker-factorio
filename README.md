@@ -54,7 +54,9 @@ The init script will automatically create a new save game if none exists.
 Then launch your container as usual.
 
 ```bash
-docker run -d \
+sudo yum install docker -y
+sudo service docker start
+sudo docker run -d \
            -v $(pwd)/saves:/opt/factorio/saves \
            -p 34197:34197/udp \
            --restart=always \
