@@ -11,7 +11,7 @@ Windows users will need to look at alterations for using PuTTY.
 
 1. Make note of the IP address of your server (ipv4)  
 2. Open terminal
-3. `ssh root@IPaddress`, obviously replace 'IPaddress' with the IP address.
+3. `ssh -i /path/my-key-pair.pem ec2-user@my-instance-public-dns-name`, replace 'my-instance-public-dns-name' with the IP address and the pem path to your cert.
 
 # Build Your Server
 
