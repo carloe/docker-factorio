@@ -18,7 +18,7 @@ ENV SERVERSETTINGS /opt/factorio/server-settings.json
 
 WORKDIR /opt/factorio
 
-RUN  wget -q -O - https://www.factorio.com/download-headless/stable | grep -o -m1 "/get-download/.*/headless/linux64" | awk '{print "--no-check-certificate https://www.factorio.com"$1" -O /tmp/factorio.tar.gz"}' | xargs wget \
+RUN  wget -q -O - https://factorio.com/get-download/stable/headless/linux64 | grep -o -m1 "/get-download/.*/headless/linux64" | awk '{print "--no-check-certificate https://www.factorio.com"$1" -O /tmp/factorio.tar.gz"}' | xargs wget \
   && tar -xzf /tmp/factorio.tar.gz -C /opt \
   && rm -rf /tmp/factorio.tar.gz
 
