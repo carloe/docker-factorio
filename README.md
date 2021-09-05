@@ -21,7 +21,6 @@ The latest Factorio headless server is downloaded at build time.
 2. `git clone https://github.com/LpmRaven/factorio-docker-server.git`
 2. `cd factorio-docker-server`
 3. Config your server (see section below then return here)
-4. `docker build -t factorio-instance-name .`
 
 # Server Configuration
 
@@ -56,6 +55,7 @@ Then launch your container as usual.
 ```bash
 sudo yum install docker -y
 sudo service docker start
+sudo docker build -t factorio-instance-name .
 sudo docker run -d \
            -v $(pwd)/saves:/opt/factorio/saves \
            -p 34197:34197/udp \
